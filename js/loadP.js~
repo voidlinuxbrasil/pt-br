@@ -1,0 +1,6 @@
+$('.carrega_pagina').click( function(){ 
+
+    var href = $(this).attr('href'); 
+    $('#conteudo').load(href);
+    return false;
+});

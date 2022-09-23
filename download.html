@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Enter The Void</title>
+	<link href="./css/download.css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="./img/favicon.ico" />
+    </head>
+    <body>
+
+	<nav id="nav">
+	    <ul id="menu">
+		<li><a href="index.html">Início</a></li>
+		<li><a href="news.html">Notícias</a></li>
+		<li><a href="download.html">Download</a></li>
+		<li><a href="https://voidlinux.org/packages/" target="_blank">Pacotes</a></li>
+		<li><a href="agradecimentos.html">Agradecimentos</a></li>
+		<li><a href="./doc/sobre.html">Documentação</a></li>
+		<li><a href="https://github.com/void-linux">GitHub</a></li>
+		<li><a href="">IRC</a></li>
+	    </ul>
+	</nav>
+
+	<div style="height: 6rem;"></div>
+
+	<div class="descri">
+	    <h2>Baixe imagens live instaláveis ​​e tarballs rootfs</h2>
+	    <p>Todas as imagens live e tarballs rootfs estão disponíveis em:</p>
+	    <ul style="margin-bottom: 1rem;">
+		<li><a href="">https://repo-default.voidlinux.org/live/current</a></li>
+	    </ul>
+	    <p>Esses arquivos também podem ser baixados de outros espelhos, listados na <a href="">documentação</a>. Basta navegar para live -> current para encontrá-los.</p>
+	    <p>Os requisitos para essas imagens podem ser encontrados na documentação. Uma conexão com a Internet via Ethernet ou WiFi é necessária para a instalação da rede.</p>
+
+	    <h2 style="margin-top: 1.5rem;">Verificando a integridade do arquivo e sua assinatura digital</h2>
+	    <p>É altamente recomendável validar a integridade e autenticidade de qualquer imagem baixada ou tarball antes de usá-lo, para garantir que não tenha sido adulterado. Instruções sobre como fazer isso são fornecidas no Manual do Void.</p>
+	    <p>Será necessário baixar o arquivo de <a href="https://repo-default.voidlinux.org/live/current/sha256sum.txt">checksum</a> e sua <a href="https://repo-default.voidlinux.org/live/current/sha256sum.sig">assinatura</a> para esta etapa.</p>
+	</div>
+
+	<div id="menu-download">
+
+	    <ul id="btns-menu">
+		<li class="btn" id="btn"><button id="btn-x8664" style="margin-bottom: 0.5rem;">x86_64</button></li>
+		<li class="btn" id="btn1"><button id="i686">i686</button></li>
+		<li class="btn" id="btn2"><button id="arm">arm</button></li>
+		<li class="btn" id="btn3"><button id="platarm">arm platforms</button></li>
+	    </ul>
+	</div>
+
+	<div class="x86">
+
+	    <div>
+		<h3 style="margin-bottom: 1rem;">x86_64</h3>
+		<p>Além da imagem de linha de comando simples, há um sabor gráfico com o ambiente de desktop XFCE. Outros ambientes gráficos são totalmente suportados pelo Void Linux, mas não são oferecidos como imagens de demonstração/instalação, a fim de diminuir a sobrecarga envolvida nos testes.</p>
+		<p>Imagens live instaláveis ​​suportam uma instalação local (com os pacotes incluídos) ou uma instalação de rede (os pacotes são baixados do repositório oficial).</p>
+		<p>Você pode fazer login nessas imagens como <span style="color: #fff; font-weight: 600">anon</span> ou <span style="color: #fff; font-weight: 600">root</span>, e a senha é <span style="color: #fff; font-weight: 600">voidlinux</span>.</p>
+		<p>Para iniciar o instalador, execute o utilitário <span style="color: #fff; font-weight: 600">void-installer</span> com as permissões apropriadas (ou seja, <span style="color: #fff; font-weight: 600">sudo void-installer</span>).</p>
+		<p style="border: 2px solid #295340; border-radius: 5px; padding: 15px;">Para instalar os pacotes para o ambiente desktop, NÃO escolha "instalar da rede" escolha a opção "instalação local".</p>
+	    </div>
+	   
+	    <div class="hoverx86" >
+		<div style="display: flex; justify-content: space-between;">
+		    <h3>base</h3>
+		    <p style="font-size: 12px;">2021-09-30</p>
+		</div>
+		<div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20210930.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-x86_64-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+		    <p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">glibc</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-x86_64-musl-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+		    <p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+		</div>
+
+		<div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+		    <h3>xfce</h3>
+		    <p style="font-size: 12px;">2021-09-30</p>
+		</div>
+		<div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+		   
+		
+		</div>
+	    </div>
+	    
+	</div>
+
+
+	<div class="i686">
+
+	    
+
+		<div>
+		    <h3 style="margin-bottom: 1rem;">i686</h3>
+		    <p>Além da imagem de linha de comando simples, há um sabor gráfico com o ambiente de desktop XFCE. Outros ambientes gráficos são totalmente suportados pelo Void Linux, mas não são oferecidos como imagens de demonstração/instalação, a fim de diminuir a sobrecarga envolvida nos testes.</p>
+		    <p>Imagens live instaláveis ​​suportam uma instalação local (com os pacotes incluídos) ou uma instalação de rede (os pacotes são baixados do repositório oficial).</p>
+		    <p>Você pode fazer login nessas imagens como <span style="color: #fff; font-weight: 600">anon</span> ou <span style="color: #fff; font-weight: 600">root</span>, e a senha é <span style="color: #fff; font-weight: 600">voidlinux</span>.</p>
+		    <p>Para iniciar o instalador, execute o utilitário <span style="color: #fff; font-weight: 600">void-installer</span> com as permissões apropriadas (ou seja, <span style="color: #fff; font-weight: 600">sudo void-installer</span>).</p>
+		    <p style="border: 2px solid #295340; border-radius: 5px; padding: 15px;">Para instalar os pacotes para o ambiente desktop, NÃO escolha "instalar da rede" escolha a opção "instalação local".</p>
+		</div>
+		
+		<div >
+		    <div style="display: flex; justify-content: space-between;">
+			<h3>base</h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+			<a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930.iso" style="color: #518a6b">Live Image</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		
+			<a href="https://repo-default.voidlinux.org/live/current/void-x86_64-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">glibc</p>
+		
+		    </div>
+
+		    <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+			<h3>xfce</h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+			<a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		
+			
+		    </div>
+		</div>
+		
+	   
+
+	</div>
+
+	<div class="arm">
+
+	    
+
+		<div>
+		    <h3 style="margin-bottom: 1rem;">arm</h3>
+		    <p>Os tarballs ROOTFS podem ser extraídos para um esquema de partição previamente preparado ou usados ​​para instalação chroot.</p>
+		    <p>As instruções gerais e específicas da plataforma estão disponíveis na documentação.</p>
+		   
+		</div>
+		
+		<div >
+		    <div style="display: flex; justify-content: space-between;">
+			<h3>armv6l</h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+			<a href="https://repo-default.voidlinux.org/live/current/void-armv6l-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		
+			<a href="https://repo-default.voidlinux.org/live/current/void-armv6l-musl-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+			
+		    </div>
+
+		    <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+			<h3>armv7l</h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+			<a href="https://repo-default.voidlinux.org/live/current/void-armv7l-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+			<a href="https://repo-default.voidlinux.org/live/current/void-armv7l-musl-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+				<p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+				
+		    </div>
+		    	    <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+				<h3>aarch64</h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+			<a href="https://repo-default.voidlinux.org/live/current/void-aarch64-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+			<a href="https://repo-default.voidlinux.org/live/current/void-aarch64-musl-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+				<p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+				
+		    </div>
+		</div>
+		
+		
+
+	</div>
+
+			<div class="arm-plat">
+
+	    
+
+		<div>
+		    <h3 style="margin-bottom: 1rem;"> plataformas arm</h3>
+		    <p>As imagens live podem ser gravadas em um cartão SD (ou seja, usando dd) e fornecem um sistema pronto para inicializar. Estas imagens estão preparadas para cartões SD de 2GB. Como alternativa, use os tarballs ROOTFS se desejar personalizar as partições e os sistemas de arquivos.</p>
+		    <p>Conecte-se ao sistema usando um terminal virtual ou SSH e faça login como root com a senha voidlinux.</p>
+		    <p>As instruções específicas da plataforma para essas imagens estão disponíveis na documentação.</p>
+		   
+		</div>
+		
+		<div >
+		    <div style="display: flex; justify-content: space-between;">
+			<h3>rpi (armv6)</h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+			<a href="https://repo-default.voidlinux.org/live/current/void-rpi-20210930.img.xz" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930.iso" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		
+			<a href="https://repo-default.voidlinux.org/live/current/void-x86_64-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+			
+		    </div>
+
+		    <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+			<h3>rpi2 (armv7) </h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+				    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930-xfce.iso" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+				<a href="https://repo-default.voidlinux.org/live/current/void-x86_64-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+				<p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+				
+		    </div>
+		    	    <div style="display: flex; justify-content: space-between; margin-top: 1rem;">
+				<h3>rpi3 (aarch64) </h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+				    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930-xfce.iso" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+				<a href="https://repo-default.voidlinux.org/live/current/void-x86_64-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+				<p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+				
+		    </div>
+		    	<div >
+		    <div style="display: flex; justify-content: space-between;">
+			<h3>rpi4 (aarch64) </h3>
+			<p style="font-size: 12px;">2021-09-30</p>
+		    </div>
+		    <div style="display: flex; gap: 1rem; border-bottom: 1px solid #cccccc;">
+				    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-musl-20210930-xfce.iso" style="color: #518a6b">Live Image</a>
+		    <p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+		    <a href="https://repo-default.voidlinux.org/live/current/void-live-x86_64-20210930.iso" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #0685d3; color: #0685d3; padding: 0px 4px; font-weight: 500; margin-left: -10px;  border-radius: 4px;">glibc</p>
+		
+			<a href="https://repo-default.voidlinux.org/live/current/void-x86_64-ROOTFS-20210930.tar.xz" style="color: #518a6b">rootfs tarball</a>
+			<p style="border: 1px solid #f5cf04; color: #f5cf04; padding: 0px 4px; font-weight: 500; margin-left: -10px; border-radius: 4px;">musl</p>
+			
+		    </div>
+			</div>
+		
+                                		
+
+			</div>
+			</div>
+
+			<div style="border-bottom: 1px solid #cccccc; margin: 2% 25%;"></div>
+			
+			<footer>
+	<p>Copyright 2022 <a style ="color:#539170; text-decoration: none;" href="">VoidLinux contributors</a></p>
+	<p>Copyright 2008-2018 Juan RP and contributors</p>
+	<p style="margin-bottom: 1rem;">Linux® is a registered trademark of Linus Torvalds <a href="" style ="color:#539170; text-decoration: none;">info</a></p>
+	
+			</footer>
+			
+	<script src="./js/menuiso.js"></script>
+    </body>
+</html>

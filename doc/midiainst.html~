@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Enter The Void</title>
+	<link href="../css/doc.css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="./img/favicon.ico" />
+	
+    </head>
+    <body>
+
+	<nav id="nav">
+	    <ul id="menu">
+		<li><a href="../index.html">Início</a></li>
+		<li><a href="../news.html">Notícias</a></li>
+		<li><a href="../download.html">Download</a></li>
+		<li><a href="https://voidlinux.org/packages/" target="_blank">Pacotes</a></li>
+		<li><a href="../agradecimentos.html">Agradecimentos</a></li>
+		<li><a href="">Documentação</a></li>
+		<li><a href="https://github.com/void-linux">GitHub</a></li>
+		<li><a href="">IRC</a></li>
+	    </ul>
+	</nav>
+
+	<div style="height: 6rem;"></div>
+
+	<div id="conteudo">
+	    
+	    <div id="lista" style="margin: 0 1%">
+		<ol style="margin-top: 1rem;">
+		    <li><a  href="sobre.html" id="btn-sobre">Sobre</a>
+			<ol>
+			    <li><a href="hist.html">História</a></li>
+			    <li><a href="smanual.html">Sobre o manual</a></li>
+			    <li><a href="infra.html">InfraDocs</a></li>
+			</ol>
+		    </li>
+		    <li><a href="instalacao.html">Instalação</a>
+			<ol>
+			    <li><a href="liveinst.html">Instaladores Live</a>
+
+				<ol>
+				    <li><a href="">Preparadando a mídia de instalação</a></li>
+				    <li><a href="">Notas de particionamento</a></li>
+				    <li><a href="">Guia de instalação</a></li>
+				    
+				</ol>
+
+				
+			    </li>
+			    
+			    <li><a href="">Guia de instalação avançada</a>
+				<ol>
+				    <li><a href="">Instalação via chroot</a></li>
+				    <li><a href="">Criptografia de disco</a></li>
+				    <li><a href="">Root no ZFS</a></li>
+				    <li><a href="">Dispositivos ARM</a>
+					<ol>
+					    <li><a href="">Plataformas</a></li>
+					</ol>
+				    </li>
+				</ol>
+				<li><a href="">musl</a></li>
+			    </li>
+			    
+			</ol>
+			
+		    </li>
+		    
+		    <li>
+			<a href="">Configuração</a>
+			<ol>
+			    <li>
+				<a href="">Documentação do pacote</a></a>
+				<ol>
+				    <li><a href="">Páginas de manual</a></li>
+				</ol>
+			    </li>
+			    <li><a href="">Firmware</a></li>
+			    <li><a href="">Localidades e traduções</a></li>
+			    <li><a href="">Usuários e grupos</a></li>
+			    <li><a href="">Serviços e Daemons - runit</a>
+				<ol>
+				    <li><a href="">Serviços por usuário</a></li>
+				    <li><a href="">Logging</a></li>
+				</ol>
+			    </li>
+			    <li><a href="">rc.conf, rc.local and rc.shutdown</a></li>
+			    <li><a href="">Cron</a></li>
+			    <li><a href="">Unidades de estado sólido</a></li>
+			    <li><a href="">Segurança</a>
+				<ol>
+				    <li><a href="">AppArmor</a></li>
+				</ol>
+				<li><a href="">Data e Hora</a></li>
+				<li><a href="">Kernel</a></li>
+				<li><a href="">Gerenciamento de Energia</a></li>
+				<li><a href="">Rede</a>
+				    <ol>
+					<li><a href="">Firewalls</a></li>
+					<li><a href="">wpa_supplicant</a></li>
+					<li><a href="">IWD</a></li>
+					<li><a href="">NetworkManager</a></li>
+					<li><a href="">ConnMan</a></li>
+				    </ol>
+				    <li><a href="">Sistemas de arquivos de rede</a></li>
+				    <li><a href="">Gerenciamento de sessões</a></li>
+				    <li><a href="">Sessão Gráfica</a>
+					<ol>
+					    <li><a href="">Drivers Gráficos</a>
+						<ol>
+						    <li><a href="">AMD or ATI</a></li>
+						    <li><a href="">Intel</a></li>
+						    <li><a href="">NVIDIA</a></li>
+						    <li><a href="">NVIDIA Optimus</a></li>
+						</ol>
+						
+					    </li>
+					    <li><a href="">Xorg</a></li>
+					    <li><a href="">Wayland</a></li>
+					    <li><a href="">Fontes</a></li>
+					    <li><a href="">Ícones</a></li>
+					    <li><a href="">GNOME</a></li>
+					    <li><a href="">KDE</a></li>
+					</ol>
+				    </li>
+				    <li><a href="">Multimídia</a>
+					<ol>
+					    <li><a href="">ALSA</a></li>
+					    <li><a href="">PipeWire</a></li>
+					    <li><a href="">PulseAudio</a></li>
+					    <li><a href="">sndio</a></li>
+					</ol>
+				    </li>
+				    <li><a href="">Bluetooth</a></li>
+				    <li><a href="">TeX Live</a></li>
+				    <li><a href="">Aplicações Externas</a></li>
+				    <li><a href="">Impressão</a></li>
+				    <li><a href="">Containers e Máquinas Virtuais</a>
+					<ol>
+					    <li><a href="">libvirt</a></li>
+					    <li><a href="">LXC</a></li>
+					</ol>
+				    </li>
+				    <li><a href="">GnuPG</a></li>
+				</li>
+			    </li>
+			</ol>
+		    </li>
+		    <li><a href="">XBPS Gerenciador de Pacotes</a>
+			<ol>
+			    <li><a href="">Uso avançado</a></li>
+			    <li><a href="">Repositórios</a>
+				<ol>
+				    <li><a href="">Espelhos</a>
+					<ol>
+					    <li><a href="">Alterando Espelhos</a></li>
+					    <li><a href="">Usando Tor Mirrors</a></li>
+					</ol>
+				    </li>
+				    <li><a href="">Pacotes Restritos</a></li>
+				    <li><a href="">Repositórios Personalizados</a></li>
+				    <li><a href="">Repositórios de Assinatura</a></li>
+				</ol>
+				<li><a href="">Solução de problemas do XBPS</a>
+				    <ol>
+					<li><a href="">Problemas comuns</a></li>
+					<li><a href="">XBPS Estático</a></li>
+				    </ol>
+				</li>
+			    </li>
+			</ol>
+		    </li>
+		    <li><a href="">Contribuição</a>
+			<ol>
+			    <li><a href="">Contribuindo para void-docs</a></li>
+			</ol>
+		    </li>
+		</ol>
+	    </div>
+	    <div id="sobre">
+		<h2>Instaladores Live</h2>
+		<p>Void fornece imagens do instalador live contendo um conjunto básico de utilitários, um programa instalador e arquivos de pacote para instalar um novo sistema Void. Essas imagens live também são úteis para reparar um sistema que não consegue inicializar ou funcionar corretamente. </p>
+		<p>Existem imagens x86_64 para sistemas baseados em glibc e musl. Há também imagens para i686, mas apenas glibc é compatível com esta arquitetura. Os instaladores live não são fornecidos para outras arquiteturas. Os usuários de outras arquiteturas precisarão usar tarballs rootfs ou realizar uma instalação manualmente.</p>
+		<h2>Imagens do instalador</h2>
+		<p>Void libera dois tipos de imagens: imagens base e imagens xfce. Os iniciantes em Linux são encorajados a experimentar uma das imagens xfce mais completas, mas usuários mais avançados podem preferir começar a partir de uma imagem base para instalar apenas os pacotes de que precisam.</p>
+		<h2>Imagens base</h2>
+		<p>As imagens de base fornecem apenas um conjunto mínimo de pacotes para instalar um sistema Void utilizável. Esses pacotes básicos são apenas aqueles necessários para configurar uma nova máquina, atualizar o sistema e instalar pacotes adicionais de repositórios.</p>
+	
+		<h2>Imagem Xfce</h2>
+		<p>A imagem xfce inclui um ambiente de desktop completo, navegador da web e aplicativos básicos configurados para esse ambiente. A única diferença das imagens base são os pacotes e serviços adicionais instalados.</p>
+		
+		<p>O seguinte software está incluído:</p>
+		<ul style="margin: 0 5%">
+		    <li><p>Gerenciador de janelas: xfwm4</p></li>
+		    <li><p>Gerenciador de arquivos: Thunar</p></li>
+		    <li><p>Navegador: Firefox ESR</p></li>
+		    <li><p>Terminal: xfce4-terminal</p></li>
+		    <li><p>Editor de texto simples: Mousepad</p></li>
+		    <li><p>Visualizador de imagens: Ristretto</p></li>
+		    <li><p>Outros: Bulk rename, Orage Globaltime, Orage Calendar, Task Manager, Parole Media Player, Audio Mixer, MIME type editor, Application finder</p></li>
+		</ul>
+		<p>O processo de instalação da imagem xfce é o mesmo das imagens base, exceto que você deve selecionar a fonte local ao instalar. Se você selecionar Rede, o instalador baixará e instalará a versão mais recente do sistema básico, sem nenhum pacote adicional incluído na imagem ao vivo.</p>
+	    </div>
+
+	</div>
+
+
+    </body>
+</html>

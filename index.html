@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Enter The Void</title>
+	<link href="./css/main.css" rel="stylesheet"/>
+	<link rel="shortcut icon" href="./img/favicon.ico" />
+    </head>
+    <body>
+
+	<nav id="nav">
+	    <ul id="menu">
+		<li><a href="index.html">Início</a></li>
+		<li><a href="news.html">Notícias</a></li>
+		<li><a href="download.html">Download</a></li>
+		<li><a href="https://voidlinux.org/packages/" target="_blank">Pacotes</a></li>
+		<li><a href="agradecimentos.html">Agradecimentos</a></li>
+		<li><a href="./doc/sobre.html">Documentação</a></li>
+		<li><a href="https://github.com/void-linux">GitHub</a></li>
+		<li><a href="">IRC</a></li>
+	    </ul>
+	</nav>
+
+	<header>
+	    <div id="logo">
+		<picture id="logo-bg"><img alt="" src="./img/void_bg.png"/></picture>
+		<picture id="logo-text"><img alt="" src="./img/void.png"/></picture>
+	    </div>
+
+	    
+	    <div id="void">
+		<h1>The Void (Linux) / Distribuição</h1>
+		<p>Void é um sistema operacional de propósito geral, baseado no monolítico <a href="https://kernel.org" target="_blank" style ="color:#539170; text-decoration: none;">Kernel</a> Linux. Seu sistema de pacotes permite instalar, atualizar e remover software rapidamente; o software é fornecido em pacotes binários ou pode ser construído diretamente de codigo fonte com a ajuda da coleção de pacotes de fontes XBPS. </p>
+		<p>Está disponível para uma variedade de plataformas. Os pacotes de software podem ser construídos nativamente ou compilados de forma cruzada através da <a href="https://github.com/void-linux/void-packages" style ="color:#539170; text-decoration: none;">coleção de pacotes do XBPS.</a> </p>
+		<p>Siga a gente no <a href="https://twitter.com/voidlinux" target="_blank" style ="color:#539170; text-decoration: none;">Twitter</a>, visite o <a href="ircs://irc.libera.chat/#voidlinux" target="_blank" style ="color:#539170; text-decoration: none;">#voidlinux</a>, nosso canal no IRC da rede  <a href="https://libera.chat/" target="_blank" style ="color:#539170; text-decoration: none;">libera.chat</a>, e junte-se ao <a href="https://www.reddit.com/r/voidlinux/" target="_blank" style ="color:#539170; text-decoration: none;">Void Linux subreddit.</a> </p>
+		<p>Visite o <a href="https://build.voidlinux.org/console" target="_blank" style ="color:#539170; text-decoration: none;">Void build server console</a> para atualizações de status de compilação de pacotes. </p>
+		<p>Contribua para o projeto Void Linux <a href="https://github.com/void-linux/void-packages/blob/master/CONTRIBUTING.md" target="_blank" style ="color:#539170; text-decoration: none;">adicionando e atualizando pacotes</a> e <a href="https://github.com/void-linux/void-docs/blob/master/CONTRIBUTING.md" target="_blank" style ="color:#539170; text-decoration: none;">estendendo a documentação</a>. Mais informações podem ser encontradas na <a href="" style ="color:#539170; text-decoration: none;">documentação</a>. </p>
+	    </div>
+	</header>
+
+
+	<div id="about">
+
+	    <div>
+		<h2>Não é um FORK!</h2>
+		<p>Void Linux é uma distribuição independente, desenvolvida inteiramente por voluntários.</p>
+		<p>Ao contrário de trilhões de outras distribuições existentes, Void não é uma modificação de uma distribuição existente. O gerenciador de pacotes e o sistema de compilação do Void foram escritos do zero.</p>
+	    </div>
+	    <div>
+		<h2>Atualizações Rolling Release (estável)</h2>
+		<p>Void se concentra na estabilidade, em vez de fazer seu usuario de cobaia. Instale uma vez, atualize rotineiramente e com segurança.</p>
+		<p>Graças ao nosso <a href="https://build.voidlinux.org/" target="_blank" style ="color:#539170; text-decoration: none;" >sistema de compilação contínua</a>, novos softwares são incorporados em pacotes binários assim que as alterações são enviadas para o repositório void-packages.</p>
+	    </div>
+	    <div>
+		<h2>runit</h2>
+		<p >Usamos <a href="http://smarden.org/runit/" target="_blank" style ="color:#539170; text-decoration: none;" >runit</a> como o sistema de inicialização e supervisor de serviço.</p>
+		<p>runit é uma abordagem simples e eficaz para inicializar o sistema com uma supervisão confiável. Consulte o <a href="" style ="color:#539170; text-decoration: none;">Manual do Void</a> para uma introdução.</p>
+	    </div>
+	    <div>
+		<h2>Diversidade da biblioteca C</h2>
+		<p>Void Linux suporta as implementações <a href="" style ="color:#539170; text-decoration: none;">musl</a> e <a href="" style ="color:#539170; text-decoration: none;">GNU</a> libc, corrigindo software incompatível quando necessário e trabalhando com desenvolvedores upstream para melhorar a exatidão e portabilidade de seus projetos.</p>
+	    </div>
+	    <div>
+		<h2>XBPS</h2>
+		<p><a href="" style ="color:#539170; text-decoration: none;">xbps</a> é o gerenciador de pacotes do sistema nativo, escrito do zero com uma licença BSD de 2 cláusulas.</p>
+		<p>O XBPS permite instalar/atualizar/remover software rapidamente em seu sistema e apresenta detecção de bibliotecas e dependências compartilhadas incompatíveis ao atualizar ou remover pacotes (entre outros). Consulte o Manual para obter uma <a href="" style ="color:#539170; text-decoration: none;">visão geral</a>.</p>
+	    </div>
+	    <div>
+		<h2>xbps-src</h2>
+		<p><a href="https://github.com/void-linux/void-packages" target="_blank" style ="color:#539170; text-decoration: none;">xbps-src</a> é o construtor de pacotes xbps, escrito do zero com uma licença BSD de 2 cláusulas.</p>
+		<p>Isso constrói o software em contêineres através do uso de namespaces do Linux, fornecendo isolamento de processos e montagens de ligação (entre outros). Nenhuma raiz necessária!</p>
+		<p>Além disso, o xbps-src pode ser compilado nativamente ou com compilação cruzada para a máquina de destino e suporta várias bibliotecas C (glibc e musl atualmente).</p>
+	    </div>
+	    
+    </div>
+
+
+    <div id="pacotes">
+
+	<div >
+	    <h2 style="display: flex; align-items: center;" ;">void-packages changes <img style="margin-left: 0.2rem;" alt="" src="./img/news.png"/></h2>
+	    <ul>
+		<li><a href="">composer8.1: update to 2.4.2.</a></li>
+		<li><a href="">composer8.0: update to 2.4.2.</a></li>
+		<li><a href="">composer: update to 2.4.2.</a></li>
+		<li><a href="">gopls: update to 0.9.5.</a></li>
+		<li><a href="">github-cli: update to 2.15.0.</a></li>
+		<li><a href="">ansible: update to 6.4.0.</a></li>
+		<li><a href="">AppStream: fix segfault when updating the cache</a></li>
+		<li><a href="">cmark-gfm: update to 0.29.0.gfm.6.</a></li>
+		<li><a href="">bmake: update to 20220909.</a></li>
+		<li><a href="">opensurge: update to 0.6.0.2.</a></li>
+	    </ul>
+	</div>
+	
+	<div>
+	    <h2 style="display: flex; align-items: center;" ;">xbps changes <img style="margin-left: 0.2rem;" alt="" src="./img/news.png"/></h2>
+	    <ul>
+		<li><a href="">ci: coverity scan install and use curl</a></li>
+		<li><a href="">ci: fix coverity scan PATH</a></li>
+		<li><a href="">ci: fix coverity scan build command</a></li>
+		<li><a href="">ci: allow triggering coverity-scan manually</a></li>
+		<li><a href="">ci: use ghcr void containers in coverity-scan</a></li>
+		<li><a href="">fix minor mistake in README</a></li>
+		<li><a href="">ci: switch to full images</a></li>
+		<li><a href="">ci: fix docker images</a></li>
+		<li><a href="">ci: only run coverity-scan on void-linux/xbps repo</a></li>
+		<li><a href="">ci: update base CI images</a></li>
+	    </ul>
+	</div>
+	
+    </div>
+
+
+    <div id="noticias">
+	<h2 style="display: flex; align-items: center;">Notícias recentes <img alt="" src="./img/news.png"/></h2>
+	
+	<a href="mirror-default.html"><h3>Novo espelho padrão</h3></a>
+	<p style="margin-bottom: 1.5rem; font-size: 10px;">Maio 27, 2022</p>
+	<p style="margin-bottom: 2.5rem;">O espelho padrão foi atualizado para https://repo-default.voidlinux.org. Se você deseja especificar um espelho que esteja mais próximo de você geograficamente, você pode encontrar a lista completa de espelhos atualmente ativos <a href=" https://docs.voidlinux.org/xbps/repositories/mirrors/index.html">aqui</a>.</p>
+	<a href="mirror-ret.html"><h3>Aposentadoria do espelho dos EUA</h3></a>
+	<p style="margin-bottom: 1.5rem; font-size: 10px;">Janeiro 03, 2022</p>
+	<p style="margin-bottom: 0.5rem;">O espelho alpha.us.repo.voidlinux.org foi retirado. Os usuários devem mudar para https://repo-us.voidlinux.org para continuar o serviço fora do centro dos EUA. Como parte do switch, o espelho de nível um dos EUA ganhou TLS e está sendo executado em um host mais confiável.</p>
+	<p>Todos os colaboradores com PRs em andamento devem fazer o rebase para garantir que a URL mais recente seja refletida na configuração de CI de sua filial.</p>
+    </div>
+
+
+    <div style="border-bottom: 1px solid white; width: 50%; margin-left: 25%; margin-top: 2.5rem;"></div>
+
+    
+    <footer>
+	<p>Copyright 2022 <a style ="color:#539170; text-decoration: none;" href="">VoidLinux contributors</a></p>
+	<p>Copyright 2008-2018 Juan RP and contributors</p>
+	<p style="margin-bottom: 1rem;">Linux® is a registered trademark of Linus Torvalds <a href="" style ="color:#539170; text-decoration: none;">info</a></p>
+	
+    </footer>
+
+    
+	<script src="./js/script.js"></script>
+    </body>
+</html>

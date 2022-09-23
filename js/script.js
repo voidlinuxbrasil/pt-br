@@ -1,0 +1,27 @@
+const bgtext = document.getElementById('logo-text');
+const bg = document.getElementById('logo-bg');
+
+
+function girarPiruleta(){
+
+    bg.style.transform = 'rotate(360deg)';
+    bg.style.transformOrigin = '50% 48.7%';
+    bg.style.transition = 'transform 2s';
+    
+}
+
+
+function voltarPiruleta(){
+
+    bg.style.transform = 'rotate(0deg)';
+    bg.style.transformOrigin = '50% 48.7%';
+    bg.style.transition = 'transform 2s';
+    
+}
+
+
+
+bgtext.addEventListener('mouseover', girarPiruleta);
+bgtext.addEventListener('mouseout', voltarPiruleta);
+bg.addEventListener('mouseover', girarPiruleta);
+bg.addEventListener('mouseout', voltarPiruleta);

@@ -1,0 +1,4 @@
+const parag1 = document.getElementById('parag1');
+const parag2 = document.getElementById('parag2');
+const x86 = document.getElementById('btn-x8664');
+const i686 = document.getElementById('i686');
